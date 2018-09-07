@@ -6,7 +6,7 @@
         dest: /home/ubuntu/remove_pwx.sh
         mode: a+x
 
-  - name: Run installation script
+  - name: Run uninstallation script
     shell:  /home/ubuntu/remove_pwx.sh
   - name: Format disk
     shell: mkfs -t ext4 /dev/xvdh  
