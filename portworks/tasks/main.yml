@@ -1,0 +1,10 @@
+---
+
+  - name: Copy shell script to remote server
+    copy:
+        src: pwx.sh
+        dest: /home/ubuntu/remove_pwx.sh
+        mode: a+x
+
+  - name: Run installation script
+    shell:  /home/ubuntu/remove_pwx.sh

@@ -1,0 +1,7 @@
+---
+
+  - name: daemon-reload
+    command:
+      systemctl daemon-reload
+  - name: Start Portwors
+    service: name=portworx state=started enabled=yes  
