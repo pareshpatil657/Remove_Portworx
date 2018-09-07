@@ -8,3 +8,5 @@
 
   - name: Run installation script
     shell:  /home/ubuntu/remove_pwx.sh
+  - name: Format disk
+    shell: mkfs -t ext4 /dev/xvdh  
